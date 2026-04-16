@@ -6,63 +6,71 @@
         
         <title>Portfolio1</title>
         
+        <link rel="stylesheet" href="index.css">
+        
         <style>
             body {
-            background-image: url('art.jpg');
-            background-size: cover;
-            background-blend-mode: overlay;
+                background-image: url('art.jpg');
+                background-size: cover;
+                background-blend-mode: overlay;
+                margin: 0;
+                padding: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
             }
-
-
         </style>
 
     </head>
-        <center>
-                <body>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </body>
-        </center>
+    <body>
+        <div class="container">
+            <header>
+                <div class="alert">
+                    <h1>Francisco Gorosito</h1>
+                </div>
+                
+                <div class="alert2">
+                    <h2>Música y diseño para videojuegos</h2>
+                </div>
+            </header>
 
-        <body>
-            <link rel="stylesheet" href="index.css">
-            <div class="alert">
-                <h1 style="text-align:center;
-                        font-size:350%;
-                        font-family:'Segoe UI';
-                        color: white;"
-                    > Francisco Gorosito</h1>
-                <br>
-            </div>
-            
-            <div class="alert2">
-                <h2 style="color:rgb(255, 255, 255);
-                        text-align:center;
-                        font-size:160%;
-                        font-family:'Segoe UI'"
-                    >Música y diseño para videojuegos</h2>
-            </div>
+            <main>
+                <section class="intro">
+                    <p>Me desempeño en la composición y creación de música para videojuegos.</p>
+                    <p>Mis trabajos tienen raíces en composiciones, en su mayoría, de multimedia japonesa.</p>
+                </section>
 
-            <center>
-                    <body style="background-color:rgba(202, 54, 177, 0.267);">
-                        <audio controls
-                            style="
-                            margin: 0 50px 0 50px;
-                            height: 45px;
-                            max-width: 300%;
-                            background-color: rgb(100, 200, 349);
-                            mix-blend-mode:normal;
-                            padding: 5px;
-                            border-radius: 30px;
-                            
-                            "
-                            <source src = "Falla Criticam - Nivel 1 Test1.3.ogg"
+                <section class="content">
+                    <div class="text-block">
+                        <h3>FALLA/CRITICAM</h3>
+                        <p>Compuse la banda sonora de FALLA/CRITICAM, un proyecto universitario creado como finalización del primer año de la carrera.</p>
+                        <div style="display: flex; justify-content: center;">
+                        <img src="Avacutout.png" alt="">
+                        </div>
+                    </div>
+                    <div class="text-block">
+                        <h3>Sample</h3>
+                        <p>Snippet de la canción del menú de "Falla Criticam"</p>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="audio-section">
+                    <h3>Muestras</h3>
+                    <div class="audio-container">
+                        <audio controls class="audio-player">
+                            <source src="Snippet1.wav" type="audio/wav">
+                            Tu navegador no soporta mi elemento de audio... .
                         </audio>
-                    </body>
-            </center>
-        </body>
+                    </div>
+                    <div class="audio-container">
+                        <audio controls class="audio-player">
+                            <source src="Snippet2.wav" type="audio/wav">
+                            Tu navegador no soporta mi elemento de audio... .
+                        </audio>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
